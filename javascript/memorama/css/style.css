@@ -26,29 +26,32 @@ h1 {
      font-size: 3.5rem;
 }
 
+#contenedor_master {
+	width:100%; height:100%;
+	position:fixed; top:0px;
+	background-image: url(../img/back_pantalla_dinamica.png);
+	background-size: cover; z-index:-1;
+	background-repeat:no-repeat;
+	filter:sepia(30%);
+}
 div.contenedor-general {
-     width: 95%;
-     max-width: 100%;
-     margin: 0 auto;
-     height: 100%!important;
-     //border: 2px dotted black;
+     width: 95%; max-width: 100%;
+     margin: 0 auto; height: 100%!important;
 }
 
 h1.titulo {
-     text-align: center;
-     margin: 2rem 0;
-     display: block;
+     text-align: center; margin: 2rem 0;
+     display: block; color:white;
 }
 
 div.contenedor-tarjetas {
-     display: flex;
-     justify-content: space-around;
+     display: flex; justify-content: space-around;
      flex-wrap: wrap;
-	 border: 2px dotted black;
 }
 
 div.tarjeta {
      background-image: url(../img/cover.jpg);
+	 background-color: #fff;
      width: 12rem;
      height: 14rem;
      display: flex;
@@ -65,6 +68,7 @@ div.tarjeta {
 
 img.tarjeta-img {
      display: none;
+	 background: #fff;
 }
 
 /* Adicionales */
@@ -103,4 +107,35 @@ div.nivel-dificultad {
      bottom: 5rem;
      font-size: 3rem;
      right: 21rem;
+}
+.resultados {
+	margin-bottom:10px;
+}
+.resultados > div {
+	font-size:2rem!important;
+	color:white;
+}
+#msjFinal {
+	text-align:center;
+	font-size:2rem;
+}
+#pantalla_dinamica {
+	width:100%; height:100%;
+	background-image:url(../img/back_pantalla_dinamica.png); background-size:cover;
+	background-repeat:no-repeat; background-attachment: inherit;
+	position:fixed; z-index:2222!important;
+	top:0px!important; display:block;
+	justify-content:center; align-items:center;
+}
+#pantalla_dinamica_cont {
+	width:100%; height:100%;
+	display:flex; flex-direction: column;
+	justify-content:center; align-items:center;
+}
+#pantalla_dinamica_cont h1 {
+	color:white; font-size:4.5rem;
+	text-shadow:5px 5px 8px #333;
+}
+#btn_nivel_1, #btn_nivel_2, #btn_nivel_3, #reset {
+	box-shadow:5px 5px 8px #333;
 }

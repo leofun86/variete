@@ -5,19 +5,36 @@
      <meta name="viewport" content="width=device-width, initial-scale=1.0">
      <link href="https://fonts.googleapis.com/css?family=Tomorrow:400,700&display=swap" rel="stylesheet">
      <link rel="stylesheet" href="css/style.css">
+	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
      <title>Coderama</title>
 </head>
 <body>
-     <div class="contenedor-general">
-          <h1 class="titulo">Coderama</h1>
-          <div class="contenedor-tarjetas">
-          
-          </div> 
-          <div class="pantalla-bloqueada">
-               <h2 class="mensaje">¡Has perdido el juego!</h2>
-          </div>
-     </div>
-     
+	<div id='contenedor_master'>
+	</div>
+	<div id="pantalla_dinamica">
+		<div id="pantalla_dinamica_cont">
+		</div>
+	</div>
+	<div class="contenedor-general">
+		<div class="resultados">
+			<div style="position:absolute; left:10px;">
+				Acertados: <span id="acertados">0</span>
+			</div>
+			<div style="position:absolute; right:10px;">
+				Intentos <span id="intentos"></span>
+			</div>
+		</div>
+		<h1 class="titulo">Coderama</h1>
+		<p id="msjFinal"></p>
+		<div class="contenedor-tarjetas" style="display:none;">
+		  
+		  </div> 
+		  <div class="pantalla-bloqueada">
+			   <h2 class="mensaje">¡Has perdido el juego!</h2>
+		  </div>
+	 </div>
+     <script src="https://code.jquery.com/jquery-3.5.1.min.js" integrity="sha256-9/aliU8dGd2tb6OSsuzixeV4y/faTqgFtohetphbbj0=" crossorigin="anonymous"></script>
+	 <script src="js/init.js"></script>
      <script src="js/script.js"></script>
 </body>
 </html>
