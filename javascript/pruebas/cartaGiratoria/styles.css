@@ -1,0 +1,74 @@
+@font-face {
+    font-family: sunday;
+    src: url(fonts/sunday\ _morning.ttf);
+}
+html, body { width:100%; height:100%; padding:0px; margin:0px; }
+.background { width:100%; height:100%; position:fixed; z-index:-1!important; filter:blur(2px); }
+.container { width:100%; height:100%; padding-top:30px; padding-bottom:30px; }
+.titulo { font-family: sunday; font-size:5rem; margin:0px; color:white; text-shadow: 5px 5px 10px #222; background:none!important;}
+.caja-cartas { text-align:center;}
+.caja-cartas div { display:inline-block; }
+.carta {
+    width:80px; height: 120px;
+    background:blue; border-radius:10px;
+    cursor: pointer;
+    transform: rotate3d(0,1,0,0deg);
+    box-shadow: 5px 5px 10px #222;
+    padding:20px 30px;
+    background-image:url('assets/question.png');
+    background-size: 80px;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.animacion-giro-green { animation: giroGreen 0.5s; }
+.animacion-giro-yellow { animation: giroYellow 0.5s; }
+.animacion-giro-orange { animation: giroOrange 0.5s; }
+.animacion-giro-red { animation: giroRed 0.5s; }
+.animacion-giro-purple { animation: giroPurple 0.5s; }
+.animacion-giro-pink { animation: giroPink 0.5s; }
+.animacion-retorno { animation: giroRetorno 0.5s; }
+@keyframes giroGreen {
+    0% {transform: rotate3d(0,1,0,0deg);}
+    50% {transform: rotate3d(0,1,0,90deg); background-color: blue; background-image:url('assets/question.png');}
+    51% {background-color:green; background-image:url('assets/emoji_1.png');}
+    100% {transform: rotate3d(0,1,0,0deg); background-color:green; background-image:url('assets/emoji_1.png');}
+}
+@keyframes giroYellow {
+    0% {transform: rotate3d(0,1,0,0deg);}
+    50% {transform: rotate3d(0,1,0,90deg); background-color: blue; background-image:url('assets/question.png');}
+    51% {background-color:yellow; background-image:url('assets/emoji_2.png');}
+    100% {transform: rotate3d(0,1,0,0deg); background-color:yellow; background-image:url('assets/emoji_2.png');}
+}
+@keyframes giroOrange {
+    0% {transform: rotate3d(0,1,0,0deg);}
+    50% {transform: rotate3d(0,1,0,90deg); background-color: blue; background-image:url('assets/question.png');}
+    51% {background-color:orange; background-image:url('assets/emoji_3.png');}
+    100% {transform: rotate3d(0,1,0,0deg); background-color:orange; background-image:url('assets/emoji_3.png');}
+}
+@keyframes giroRed {
+    0% {transform: rotate3d(0,1,0,0deg);}
+    50% {transform: rotate3d(0,1,0,90deg); background-color: blue; background-image:url('assets/question.png');}
+    51% {background-color:red; background-image:url('assets/emoji_4.png');}
+    100% {transform: rotate3d(0,1,0,0deg); background-color:red; background-image:url('assets/emoji_4.png');}
+}
+@keyframes giroPurple {
+    0% {transform: rotate3d(0,1,0,0deg);}
+    50% {transform: rotate3d(0,1,0,90deg); background-color: blue; background-image:url('assets/question.png');}
+    51% {background-color:purple; background-image:url('assets/emoji_5.png');}
+    100% {transform: rotate3d(0,1,0,0deg); background-color:purple; background-image:url('assets/emoji_5.png');}
+}
+@keyframes giroPink {
+    0% {transform: rotate3d(0,1,0,0deg);}
+    50% {transform: rotate3d(0,1,0,90deg); background-color: blue; background-image:url('assets/question.png');}
+    51% {background-color:pink; background-image:url('assets/emoji_6.png');}
+    100% {transform: rotate3d(0,1,0,0deg); background-color:pink; background-image:url('assets/emoji_6.png');}
+}
+@keyframes giroRetorno {
+    0% {transform: rotate3d(0,1,0,0deg);}
+    50% {transform: rotate3d(0,1,0,90deg); background-color:blue;}
+    100% {transform: rotate3d(0,1,0,0deg); background-color:blue; background-image:url('assets/question.png');}
+}
+@keyframes giroBack {
+    0%{transform:rotate(0deg)}
+    100%{transform:rotate(360deg)}
+}
